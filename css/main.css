@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Yeon+Sung&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Yeong Sung', cursive;
+    font-size: 25px;
+}
+.home-body{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/*Configuracion para el header de mi blog personal*/
+.header{
+    width: 100%;
+    height: 140px;
+    display: grid;/*Dividir iconos y letra aparte*/
+    grid-template-rows: 1fr 1fr;/*Nos permite crear filas*/
+}
+.social{
+    background-color: rgb(240, 134, 217);
+    width: 100%;
+    height: 50px;
+    display:grid;
+}
+.social-icons{
+    width: 250px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+.social-icons a{
+    color: red;
+    font-size: 28px;
+}
+.social-icons a:hover{
+    color: white;
+    cursor: pointer;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+    background-color: white;
+}
+.nav-logo{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.nav-link a:hover{
+    color: blue;
+    cursor: pointer;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+.nav-link a{
+    text-decoration: none;
+    color: deeppink;
+    border-bottom: 1px solid black;
+}
+/*Etiqueta main para mi pagina*/
+.home-main{
+    display: grid; 
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background-image: url(/img/IMG-20221123-WA0013.jpeg);
+    background-position: center; /*Con esto podemos centrar la imagen en nuestro contenedor */
+    background-repeat: no-repeat;/*Con esto evitamos que la iamgen se repita*/
+    background-size: cover;
+}
+.main-container{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+}
+.main-container__texto{
+    text-align: center;
+    font-size: 30px; 
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: deeppink;
+}
+.main-container__link{
+    background-color: rgb(134, 240, 240);
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: deeppink;
+    font-weight: 700;
+    font-size: 18px;
+    height: 45px;
+    border-radius: 10px;
+}
+.main-container__link:hover{
+    background-color: rgb(62, 173, 173);
+    cursor: pointer;
+}
+/*Pagina de blogs*/
+.blogs-main{
+    display: grid;
+}
+.news{
+    background-color: rgb(240, 134, 217);
+    padding: 10px 80px 40px;
+}
+.news-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+.news-container img{
+    grid-column: 1;
+    width: 85%;
+    display: inline-block;
+    margin: 10px 0px;
+}
+.news-info{
+    grid-column: 2;
+}
+.news-info h2{
+    margin-top: 20px;
+}
+.news-info p{
+    margin: 30px 0px;
+}
+/*Boton de la pagina*/
+.blogs-btn{
+    text-decoration: none;
+    background-color: rgb(134, 240, 240);
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: deeppink;
+    font-weight: 700;
+    font-size: 18px;
+    height: 45px;
+    border-radius: 10px;
+}
+.blogs-btn:hover{
+    background-color: rgb(62, 173, 173);
+    cursor: pointer;
+}
+/*Imagenes*/
+.momentos{
+    padding: 0px 80px 40px;
+}
+.momentos h3{
+    border-bottom: 1px solid blue;
+    padding: 20px 0;
+    text-align: center;
+}
+.momentos-blog{
+    display: inline-block;
+    padding: 15px;
+    max-width: 32%;
+    margin-bottom: 50px;
+}
+.momentos-blog img{
+    width: 100%;
+}
+.momentos-blog h4{
+    margin: 20px 0px;
+}
+.momentos-blog p{
+    margin-bottom: 35px;
+}
+/*aqui edito el footer*/
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(240, 134, 217);
+    border-top: 35px solid gray;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    color: black;
+    text-align: center;
+}
+  /*Las fechas*/
+  .fechas.main{
+    display: grid;
+}
+.fechas{
+    background-color: rgb(240, 134, 217);
+    padding: 10px 80px 40px;
+}
+.fechas-img{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+.fechas-img img{
+    grid-column: 1;
+    width: 85%;
+    display: inline-block;
+    margin: 10px 0px;
+}
+.fechas-img h2{
+    grid-column: 1;
+}
+.fechas-img h3{
+    grid-row: 1;
+}
+.fechas.img h4{
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
